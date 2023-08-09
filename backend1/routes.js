@@ -7,7 +7,8 @@ router.get("/message", async (req, res) => {
     msg01: "Hola desde backend1",
     msg02: "", // Esta línea puede ser eliminada ya que vas a reemplazarla con el valor de respuesta.
   };
-  const path = process.env.SERVICE_BACKEND2 || "http://localhost:19020/api/message";
+  const path =
+    process.env.SERVICE_BACKEND2 || "http://localhost:19020/api/message";
 
   try {
     const response = await axios.get(path);

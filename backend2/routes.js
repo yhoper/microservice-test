@@ -4,7 +4,7 @@ const router = express.Router();
 
 router.get("/message", (req, res) => {
   const messages = {
-    message: "Hola desde backend2"
+    message: "Hola desde backend2",
   };
   res.json(messages);
 });
