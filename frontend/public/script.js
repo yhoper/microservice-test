@@ -28,3 +28,16 @@ fetch("/api/config")
   .catch((error) => {
     console.error(error);
   });
+
+/*
+  Using this example, you can test the accessibility of Backend 2 from Backend 1.
+
+fetch("http://localhost:19020/api/message")
+  .then((res) => res.json())
+  .then((data) => {
+    console.log(data);
+  })
+  .catch((error) => {
+    console.error("Error al realizar la solicitud:", error);
+  });
+  */
