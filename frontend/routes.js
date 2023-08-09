@@ -4,7 +4,7 @@ const router = express.Router();
 router.get("/config", (req, res) => {
   res.json({
     pathServiceBackend1:
-      process.env.SERVICE_BACKEND1 || "http://localhost:19010/api/message",
+    process.env.SERVICE_BACKEND1 || "http://localhost:19010/api/message",
   });
 });
 
