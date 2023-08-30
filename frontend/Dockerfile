@@ -1,11 +1,13 @@
 FROM node:16-alpine
 
+ARG BASE_DIR
+
 WORKDIR /application
 
-COPY package.json .
+COPY ${BASE_DIR}/package.json .
 
 RUN yarn install
 
-COPY . . 
+COPY ${BASE_DIR}/. . 
 
 CMD ["yarn","run",  "start" ]
